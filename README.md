@@ -94,31 +94,4 @@ AES-256 pour les données personnelles, clé dans le coffre du système). Voir
 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) pour la synchronisation, la sécurité et les
 évolutions prévues (voix, RAG/LLM, amazighe, antennes).
 
-## Tests
 
-```bash
-flutter analyze
-flutter test                     # 30 tests : moteur, assistant, parcours, synchronisation
-cd backend && pytest             # 15 tests : API, synchronisation, parité du moteur
-```
-
-Les tests vérifient notamment que Chahd obtient **92 %** pour la « Formation en initiation au
-numérique », côté application comme côté serveur, avec les quatre raisons du parcours nominal.
-
-## Photos des offres
-
-Les couvertures sont dessinées par l'application. Pour utiliser de vraies photos, déposer
-`assets/images/opportunities/<imageKey>.jpg` (`digital`, `electric`, `sewing`…, voir
-`assets/data/opportunities.json`) : elles remplacent automatiquement l'illustration.
-
-## Logo et icônes
-
-Le logo officiel est conservé dans `design/brand/`. L'application n'embarque pas l'image
-d'origine mais deux masques blancs transparents (`assets/images/brand/`) qu'elle colore à
-l'affichage : blanc sur terracotta (écran de démarrage, accueil), terracotta sur crème
-(connexion, inscription). Après une modification du logo :
-
-```bash
-flutter test tool/extract_logo_test.dart    # logo d'origine → masques
-flutter test tool/generate_icons_test.dart  # masques → icônes Android, iOS, macOS, web, Windows
-```
