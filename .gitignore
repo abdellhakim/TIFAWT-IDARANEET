@@ -1,0 +1,79 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code: launch configurations and recommended extensions are shared;
+# settings.json holds machine-specific paths (Flutter SDK, Python venv).
+.vscode/settings.json
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Environment variables & secrets — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+
+# Firebase / Google service files (not used by this architecture,
+# kept out in case a plugin adds them)
+google-services.json
+GoogleService-Info.plist
+lib/firebase_options.dart
+firebase.json
+.firebase/
+
+# Signing keys (also covered in android/.gitignore, belt & suspenders)
+key.properties
+*.keystore
+*.jks
+
+# Local AI/editor tooling (machine-specific paths)
+.claude/
+
+# Test coverage
+coverage/
+*.lcov
+
+# Backend (Flask)
+backend/.venv/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/*.db
+backend/instance/
+*.pyc

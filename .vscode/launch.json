@@ -1,0 +1,43 @@
+{
+  // Run and Debug panel (Ctrl+Shift+D) → pick a configuration → F5.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TIFAWT — démo autonome",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "TIFAWT — connecté à l'API (Chrome)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "args": ["--dart-define=TIFAWT_API_URL=http://localhost:5000"]
+    },
+    {
+      "name": "TIFAWT — connecté à l'API (émulateur Android)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=TIFAWT_API_URL=http://10.0.2.2:5000"]
+    },
+    {
+      "name": "API Flask",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/run.py",
+      "cwd": "${workspaceFolder}/backend",
+      "python": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "justMyCode": true
+    }
+  ],
+  "compounds": [
+    {
+      "name": "API + application (Chrome)",
+      "configurations": ["API Flask", "TIFAWT — connecté à l'API (Chrome)"],
+      "stopAll": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "version": 2,
+  "notice": "Données fictives de démonstration.",
+  "items": [
+    {
+      "id": "c_plateforme_taroudant",
+      "kind": "association",
+      "name": { "ar": "منصة الشباب تارودانت", "fr": "Plateforme des jeunes de Taroudant" },
+      "province": "taroudant",
+      "commune": "Taroudant",
+      "address": { "ar": "حي المحايطة، قرب باب الخميس", "fr": "Quartier Mhaita, près de Bab El Khemis" },
+      "distanceKm": 1.1,
+      "opensAt": "08:30",
+      "closesAt": "18:30",
+      "openDays": [1, 2, 3, 4, 5, 6],
+      "services": {
+        "ar": ["الاستقبال و التوجيه", "المواكبة فالمشاريع", "حواسيب فالخدمة الحرة"],
+        "fr": ["Accueil et orientation", "Accompagnement de projets", "Ordinateurs en libre accès"]
+      },
+      "phone": "0528000201",
+      "lat": 30.4712,
+      "lng": -8.8784,
+      "pinX": 0.5,
+      "pinY": 0.55,
+      "isHome": true
+    },
+    {
+      "id": "c_dar_chabab_taroudant",
+      "kind": "youthCenter",
+      "name": { "ar": "دار الشباب تارودانت", "fr": "Maison de jeunes de Taroudant" },
+      "province": "taroudant",
+      "commune": "Taroudant",
+      "address": { "ar": "شارع محمد الخامس", "fr": "Avenue Mohammed V" },
+      "distanceKm": 3.2,
+      "opensAt": "08:30",
+      "closesAt": "18:30",
+      "openDays": [1, 2, 3, 4, 5, 6],
+      "services": {
+        "ar": ["ورشات رقمية", "أندية ثقافية و رياضية", "حصص التوجيه"],
+        "fr": ["Ateliers numériques", "Clubs culturels et sportifs", "Permanences d'orientation"]
+      },
+      "phone": "0528000202",
+      "lat": 30.4689,
+      "lng": -8.8731,
+      "pinX": 0.78,
+      "pinY": 0.4
+    },
+    {
+      "id": "c_tafingoult",
+      "kind": "youthCenter",
+      "name": { "ar": "فضاء الشباب القروي تفنكولت", "fr": "Espace jeunes rural de Tafingoult" },
+      "province": "taroudant",
+      "commune": "Tafingoult",
+      "address": { "ar": "مركز الجماعة", "fr": "Centre de la commune" },
+      "distanceKm": 42,
+      "opensAt": "08:30",
+      "closesAt": "18:30",
+      "openDays": [1, 2, 3, 4, 5, 6],
+      "services": {
+        "ar": ["تكوينات رقمية مختلطة", "إعارة التيليفونات", "محاربة الأمية"],
+        "fr": ["Formations numériques hybrides", "Prêt de smartphones", "Alphabétisation"]
+      },
+      "phone": "0528000203",
+      "lat": 30.7811,
+      "lng": -8.3829,
+      "pinX": 0.3,
+      "pinY": 0.27
+    },
+    {
+      "id": "c_anapec_taroudant",
+      "kind": "agency",
+      "name": { "ar": "وكالة أنابيك تارودانت", "fr": "Agence ANAPEC de Taroudant" },
+      "province": "taroudant",
+      "commune": "Taroudant",
+      "address": { "ar": "الحي الإداري", "fr": "Quartier administratif" },
+      "distanceKm": 2.8,
+      "opensAt": "08:30",
+      "closesAt": "16:30",
+      "openDays": [1, 2, 3, 4, 5],
+      "services": {
+        "ar": ["عروض الخدمة", "ورشات السيرة الذاتية", "برامج الإدماج"],
+        "fr": ["Offres d'emploi", "Ateliers CV", "Programmes d'insertion"]
+      },
+      "phone": "0528000204",
+      "lat": 30.4655,
+      "lng": -8.8812,
+      "pinX": 0.2,
+      "pinY": 0.64
+    },
+    {
+      "id": "c_asso_ait_iaaza",
+      "kind": "association",
+      "name": { "ar": "جمعية تيليلي لتنمية المرأة", "fr": "Association Tilili pour les femmes" },
+      "province": "taroudant",
+      "commune": "Aït Iaaza",
+      "address": { "ar": "دوار تيكيوين، آيت إيعزة", "fr": "Douar Tikiouine, Aït Iaaza" },
+      "distanceKm": 18,
+      "opensAt": "09:00",
+      "closesAt": "17:00",
+      "openDays": [1, 2, 3, 4, 5],
+      "services": {
+        "ar": ["الخياطة و الطرز", "محاربة الأمية", "مواكبة التعاونيات"],
+        "fr": ["Couture et broderie", "Alphabétisation", "Accompagnement des coopératives"]
+      },
+      "phone": "0528000205",
+      "lat": 30.5079,
+      "lng": -8.7912,
+      "pinX": 0.66,
+      "pinY": 0.78
+    }
+  ]
+}

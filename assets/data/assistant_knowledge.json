@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "faq": [
+    {
+      "id": "indh",
+      "keywords": ["indh", "المبادرة الوطنية", "التنمية البشرية", "initiative nationale"],
+      "answer": {
+        "ar": "INDH هي المبادرة الوطنية للتنمية البشرية. فالإقليم ديالك كتمول تكوينات مجانية و كتواكب الشباب اللي بغاو يبداو مشروع، عبر منصات الشباب.",
+        "fr": "L'INDH (Initiative nationale pour le développement humain) finance des formations gratuites et accompagne les jeunes porteurs de projet, notamment via les plateformes des jeunes."
+      },
+      "suggestions": { "ar": ["بغيت نبدا مشروع", "فين منصة الشباب؟"], "fr": ["Je veux créer un projet", "Où est la plateforme des jeunes ?"] }
+    },
+    {
+      "id": "awrach",
+      "keywords": ["اوراش", "أوراش", "awrach"],
+      "answer": {
+        "ar": "أوراش برنامج كيعطي خدمة مؤقتة مؤدى عليها فالأوراش المحلية، مع تغطية صحية و تكوين قصير. ما كيطلبش دبلوم.",
+        "fr": "Awrach propose des emplois temporaires rémunérés sur des chantiers locaux, avec couverture médicale et formation courte. Aucun diplôme n'est demandé."
+      },
+      "suggestions": { "ar": ["كيفاش نتسجل؟"], "fr": ["Comment m'inscrire ?"] },
+      "opportunityId": "op_awrach"
+    },
+    {
+      "id": "anapec",
+      "keywords": ["anapec", "انابيك", "أنابيك", "agence emploi", "وكالة التشغيل"],
+      "answer": {
+        "ar": "أنابيك هي الوكالة الوطنية لإنعاش التشغيل. تقدر تمشي للوكالة ديال تارودانت باش تسجل، تلقى عروض الخدمة و تشارك فورشات السيرة الذاتية.",
+        "fr": "L'ANAPEC est l'agence nationale pour l'emploi. À l'agence de Taroudant, vous pouvez vous inscrire, consulter des offres et participer aux ateliers CV."
+      },
+      "suggestions": { "ar": ["فين أقرب مركز؟", "كيفاش ندير السيرة الذاتية؟"], "fr": ["Où est le centre le plus proche ?", "Comment faire mon CV ?"] }
+    },
+    {
+      "id": "ofppt",
+      "keywords": ["ofppt", "التكوين المهني", "formation professionnelle", "ista"],
+      "answer": {
+        "ar": "OFPPT هو مكتب التكوين المهني. عندو مراكز فتارودانت و أكادير، و كاين تكوينات من مستوى الإعدادي حتى بعد الباك.",
+        "fr": "L'OFPPT est l'office de la formation professionnelle. Il a des centres à Taroudant et Agadir, du niveau collège jusqu'au Bac+."
+      },
+      "suggestions": { "ar": ["وريني التكوينات"], "fr": ["Montrez-moi les formations"] }
+    },
+    {
+      "id": "documents",
+      "keywords": ["وثائق", "الوراق", "اوراق", "documents", "papiers", "dossier", "pieces", "البطاقة الوطنية", "شهادة السكنى"],
+      "answer": {
+        "ar": "غالبا غادي يطلبو منك: البطاقة الوطنية، شهادة السكنى، شهادة المستوى الدراسي و جوج تصاور. تقدر تتبع شنو واجد عندك فـ\"الوثائق ديالي\".",
+        "fr": "On vous demandera généralement : la CIN, un certificat de résidence, une attestation de niveau scolaire et deux photos. Suivez ce qui est prêt dans « Mes documents »."
+      },
+      "suggestions": { "ar": ["شنو هي الخطوة الجاية؟"], "fr": ["Quelle est la prochaine étape ?"] },
+      "route": "/account"
+    },
+    {
+      "id": "cv",
+      "keywords": ["cv", "سيرة ذاتية", "السيرة الذاتية", "curriculum"],
+      "answer": {
+        "ar": "باش تدير سيرة ذاتية مزيانة، أنابيك كتنظم ورشات مجانية. حتى منصة الشباب كتعاونك تكتبها و تطبعها.",
+        "fr": "L'ANAPEC organise des ateliers CV gratuits, et la plateforme des jeunes peut vous aider à le rédiger et l'imprimer."
+      },
+      "suggestions": { "ar": ["فين أقرب مركز؟"], "fr": ["Où est le centre le plus proche ?"] }
+    },
+    {
+      "id": "offline",
+      "keywords": ["بلا انترنيت", "بلا أنترنيت", "sans internet", "hors ligne", "hors connexion", "offline", "connexion"],
+      "answer": {
+        "ar": "إيه، تيفاوت كيخدم حتى بلا أنترنيت: الملف، التوصيات، المسار و المساعد كلهم محفوظين فالتيليفون. ملي ترجع الكونيكسيون، كلشي كيتزامن بوحدو.",
+        "fr": "Oui : votre profil, vos recommandations, votre parcours et l'assistant restent disponibles sans internet. Tout se synchronise automatiquement au retour de la connexion."
+      },
+      "suggestions": { "ar": [], "fr": [] }
+    },
+    {
+      "id": "privacy",
+      "keywords": ["المعطيات", "معطياتي", "données", "donnees", "vie privée", "confidentialite", "cndp", "09-08"],
+      "answer": {
+        "ar": "المعطيات ديالك محفوظة فالتيليفون بطريقة مشفرة، و ما كتمشيش للسيرفور غير ملي كتكون الكونيكسيون. تقدر تشوفها ولا تمسحها من الإعدادات.",
+        "fr": "Vos données sont chiffrées sur le téléphone et ne partent vers le serveur qu'à la synchronisation. Vous pouvez les consulter ou les supprimer depuis les paramètres."
+      },
+      "suggestions": { "ar": [], "fr": [] },
+      "route": "/settings"
+    },
+    {
+      "id": "free",
+      "keywords": ["مجاني", "فابور", "بلا فلوس", "gratuit", "gratuite", "payer", "prix", "combien"],
+      "answer": {
+        "ar": "أغلب التكوينات اللي فتيفاوت مجانية. اللي فيها مصاريف مكتوب عليها \"مدفوعة\" ففلتر الفرص.",
+        "fr": "La plupart des formations proposées sont gratuites. Celles qui ont des frais sont signalées « payante » dans les filtres."
+      },
+      "suggestions": { "ar": ["وريني التكوينات المجانية"], "fr": ["Montrez-moi les formations gratuites"] }
+    }
+  ]
+}

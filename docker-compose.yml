@@ -1,0 +1,34 @@
+# API + PostgreSQL, as described in the technical specification.
+#   docker compose up --build
+# Then run the app with: flutter run --dart-define=TIFAWT_API_URL=http://<host>:5000
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tifawt
+      POSTGRES_USER: tifawt
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-tifawt-dev}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tifawt"]
+      interval: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://tifawt:${POSTGRES_PASSWORD:-tifawt-dev}@db:5432/tifawt
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?set JWT_SECRET_KEY in .env}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      ASSISTANT_PROVIDER: ${ASSISTANT_PROVIDER:-rule_based}
+    ports:
+      - "5000:5000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
